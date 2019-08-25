@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Github Repo Lister</string>
+
+    <!--Main Activity-->
+    <string name="home">Home</string>
+    <string name="hint">Type a username</string>
+    <string name="label_submit">Submit</string>
+
+
+    <!--Detail Activity-->
+    <string name="label_owner">Owner</string>
+    <string name="label_stars">Stars:</string>
+    <string name="label_open_issues">Open Issues:</string>
+
+
+    <string name="error_message">Something went wrong. Please try again..</string>
+    <string name="invalid_username">Please enter a valid username.</string>
+    <string name="no_network_error_message">You do not have a Internet Connection.</string>
+
+</resources>

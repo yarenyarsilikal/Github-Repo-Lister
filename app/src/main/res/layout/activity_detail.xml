@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.DetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@id/iv_avatar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back" />
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:background="@color/color_dark_gray"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_no_avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSecondaryText"
+        android:layout_margin="10dp"
+        android:text="@string/label_owner"
+        app:layout_constraintStart_toEndOf="@id/iv_avatar"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tv_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/label_stars"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_avatar"
+        android:textColor="@color/colorSecondaryText"/>
+
+    <TextView
+        android:id="@+id/tv_star_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toEndOf="@id/tv_star"
+        app:layout_constraintTop_toBottomOf="@id/iv_avatar"
+        tools:text="0"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/tv_issues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/label_open_issues"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_star"
+        android:textColor="@color/colorSecondaryText"/>
+
+    <TextView
+        android:id="@+id/tv_issues_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toEndOf="@id/tv_issues"
+        app:layout_constraintTop_toBottomOf="@id/tv_star_count"
+        tools:text="0"
+        android:textColor="@color/colorAccent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
